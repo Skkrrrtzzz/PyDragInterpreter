@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.python.pydraginterpreter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img1"
+        android:label="@string/PyDrag"
+        android:roundIcon="@drawable/img1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PythonSyntax"
+            android:exported="false" />
+        <activity
+            android:name=".PythonComment"
+            android:exported="false" />
+        <activity
+            android:name=".PythonIntro"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerBase"
+            android:exported="false" />
+        <activity
+            android:name=".SampleLearn"
+            android:exported="false" />
+        <activity
+            android:name=".MainDrag"
+            android:exported="false" />
+        <activity
+            android:name=".MainLearn"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

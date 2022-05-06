@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/itemPythonIntro"
+            android:title="Python Introduction" />
+        <item android:id="@+id/itemPythonSyntax"
+            android:title="Python Syntax &amp; Indentation" />
+        <item android:id="@+id/itemPythonComments"
+            android:title="Python Comments" />
+
+    </group>
+
+</menu>

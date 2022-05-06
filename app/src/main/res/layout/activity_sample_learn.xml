@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SampleLearn">
+
+    <LinearLayout
+        android:id="@+id/llPythonSyntax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python Syntax"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python is a  very simple language, and has a very straightforward syntax."
+            android:textSize="18sp"
+            android:paddingBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's easy to print out the line."
+            android:textSize="18sp"
+            android:paddingBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Example"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="#d3d3d3">
+            <TextView
+                android:id="@+id/send_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="print(&quot;Hello! World.&quot;)"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:text="Try it"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llPythonSyntax" />
+</androidx.constraintlayout.widget.ConstraintLayout>

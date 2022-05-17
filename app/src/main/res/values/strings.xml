@@ -4,4 +4,5 @@
     <string name="Run">Run</string>
     <string name="menu_drawer_open">Drawer Open</string>
     <string name="menu_drawer_close">Drawer Close</string>
+    <string name="select_items">Select Items</string>
 </resources>

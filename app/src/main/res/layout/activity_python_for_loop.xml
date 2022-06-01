@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:scrollbars="none"
+    tools:context=".PythonForLoop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LLPythonForLoops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvPythonForLoops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:text="Python For Loops"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="The for loops in python is used for iterating over a sequence
+( either a list, a tuple, a dictionary, a set, or a string)."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="The body of for loop is separated from the rest of the code using indentation."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Syntax"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="#232865"
+                android:text="for value in sequence:\n      statement(s)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="letters = &#91; &quot;a&quot;, &quot;b&quot;, &quot;c&quot;,  &#93;\nfor x in letters :\n      print(x)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="a\nb\nc"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="Looping Through a String"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Strings are iterable objects.It contain a sequence of characters:"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="for x in &quot;Letters&quot; :\n      print(x)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="L\ne\nt\nt\ne\nr\ns"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="The range() Function"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Python has a built-in function called range(). It returns a number sequence that starts at
+ zero and increments by one by default, stopping before the provided number."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="It has three parameters, two of which are optional: start: This is an optional parameter
+that defines the sequence's start point."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="for x in range(2, 10, 2) :\n      print(x)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="2\n4\n6\n8"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="The sequence with increment of 2"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="The break statement"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="The break statement terminates the loop statement  before it has looped
+ through all the items:"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="colors = &#91; &quot;white&quot;, &quot;Blue&quot;, &quot;Red&quot;, &quot;Black&quot; &#93;\nfor x in colors:\n      print(x)\n      if x == &quot;Red&quot;\n               break"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="White\nBlue\nRed"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="The loop stop when x is &quot;Red&quot;"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="The continue statement"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="We can use the continue statement to end the current loop iteration and begin the next:"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="colors = &#91; &quot;white&quot;, &quot;Blue&quot;, &quot;Red&quot;, &quot;Black&quot; &#93;\nfor x in colors:\n      if x == &quot;Red&quot;\n               continue\n      print(x)"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="White\nBlue\nBlack"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="The loop will not print &quot; Red &quot;"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="The pass statement"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="When a statement is required syntactically but no command or code is
+ to be executed, the pass statement is used."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="for x in (0, 1, 2) :\n      pass"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTE:"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="with pass statement, python will not give you an error even for loops are empty"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="for loop with else"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Python allows the else keyword to be used with the for and while loops."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="The else block comes after the loop's body. After all iterations have been completed, the statements in the else block will be performed. "
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="for x in (5)\n       print(x)\nelse:\n       print(&quot; Done!&quot;)"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="0\n1\n2\n3\n4\nDone!"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="Nested Loops"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="A nested loop exists inside the body of another loop."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="for a in range(1, 6):\n       for b in range(1, 6):\n               print(a * b, end=' ')\n       print()"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="1 2 3 4 5 \n2 4 6 8 10 \n3 6 9 12 15 \n4 8 12 16 20 \n5 10 15 20 25"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btnForLoopPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonForLoops" />
+
+        <Button
+            android:id="@+id/btnForLoopNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonForLoops" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

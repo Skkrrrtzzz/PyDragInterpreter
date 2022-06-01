@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
+    android:background="#363636"
     tools:context=".PythonIntro">
 
 
@@ -14,10 +15,11 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/LLPythonSyntax"
+            android:id="@+id/LLPythonIntro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingBottom="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -26,14 +28,73 @@
                 android:id="@+id/tvPythonIntro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
+                android:layout_gravity="center"
                 android:paddingBottom="20dp"
-                android:text="Python Intro"
+                android:text="Python Introduction"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="What is Python?"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="Python is one of the fastest growing languages; it's a high-level, interactive, interpreted, and object-oriented language. That's why it is also called a general-purpose programming language ."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingTop="15dp"
+                android:paddingBottom="10dp"
+                android:text="It was created by Guido van Rossum in the late of 1980s."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="The first released was in 1991 as Python Version 0.9.0"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
 
         </LinearLayout>
+
+
+        <!--        LINEAR LAYOUT PYTHON INDENTATION-->
+
+        <Button
+            android:id="@+id/btnIntroNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonIntro"
+            tools:layout_editor_absoluteY="763dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

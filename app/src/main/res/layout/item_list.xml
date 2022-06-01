@@ -5,5 +5,4 @@
     android:text="Sample"
     android:padding="10dp"
     android:layout_margin="2dp">
-
 </TextView>

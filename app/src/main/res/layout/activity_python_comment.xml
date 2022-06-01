@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#363636"
+    android:orientation="vertical"
     android:padding="20dp"
-    android:fillViewport="true"
+    android:scrollbars="none"
     tools:context=".PythonComment">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingBottom="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -25,11 +29,12 @@
                 android:id="@+id/tvPythonComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
+                android:layout_gravity="center"
                 android:paddingBottom="20dp"
                 android:text="Python Comment"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,7 +43,8 @@
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
                 android:text="comment can be used to explain the code so that it is easy to understand and it can also be used to prevent the execution of the code for testing. "
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -46,136 +52,201 @@
                 android:layout_gravity="start"
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
-                android:text="Python uses # to comment"
-                android:textSize="15sp" />
+                android:text="Python uses hash (#) to write a comment. Python Interpreter ignores comments, it means it will not be print."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Syntax"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp"
+                android:text="#this is a comment"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Example:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/greencontainer"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:background="#232865"
+                android:padding="10dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="#This is a comment"
-                    android:textColor="#67bf33"
-                    android:textSize="15sp" />
+                    android:textColor="@color/ColorComment"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
                     android:text="print(&quot;This line will be print.&quot;)"
-                    android:textSize="15sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
+            <!--            * * * * * OUTPUT * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Output:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#d3d3d3"
-                android:padding="10dp">
+                android:background="#232865"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
                     android:text="This line will be print."
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="25dp"
+                android:paddingTop="50dp"
                 android:paddingBottom="15dp"
                 android:text="Python Comment can be placed at the end of a line, python will comment the rest."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
+            <!--            * * * * * EXAMPLE * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Example:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/greencontainer"
-                android:orientation="vertical"
+                android:background="#232865"
+                android:orientation="horizontal"
                 android:padding="10dp">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
-                    android:text="print(&quot;This line will be print.&quot;)   #This is a comment"
-                    android:textSize="15sp" />
+                    android:text="print(&quot;This line will be print.&quot;)"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="  #This is a comment"
+                    android:textSize="16sp"
+                    android:textColor="@color/ColorComment"/>
 
             </LinearLayout>
 
+            <!--            * * * * * OUTPUT * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Output:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#d3d3d3"
-                android:padding="10dp">
+                android:background="#232865"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
                     android:text="This line will be print."
-                    android:textSize="15sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
             </LinearLayout>
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="25dp"
+                android:paddingTop="50dp"
                 android:paddingBottom="15dp"
                 android:text=" Python Comment can be used to prevent execution of a code."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
+            <!--            * * * * * EXAMPLE * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Example:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/greencontainer"
+                android:background="#232865"
                 android:orientation="vertical"
                 android:padding="10dp">
 
@@ -183,73 +254,170 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="# print(&quot;This line will not be print.&quot;)"
-                    android:textColor="#67bf33"
-                    android:textSize="15sp" />
+                    android:textColor="@color/ColorComment"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
                     android:text="print(&quot;This line will be print.&quot;)"
-                    android:textSize="15sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
 
+            <!--            * * * * * OUTPUT * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Output:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#d3d3d3"
-                android:padding="10dp">
+                android:background="#232865"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
                     android:text="This line will be print."
-                    android:textSize="15sp" />
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="Multiline Comment"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Python has no syntax for multiline comments. Using triple quotation, Python will also ignored this and can be used also as comment."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="To comment a multiline will use a hash (#) for each line."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+                android:background="#232865"
+                android:orientation="vertical"
                 android:padding="10dp">
 
-                <Button
-                    android:layout_width="100dp"
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="Previous" />
+                    android:text="#This is a comment\n#print(&quot;This line will be print.&quot;)\n#This is the way to comment multiline"
+                    android:textColor="@color/ColorComment"
+                    android:textSize="15sp" />
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"></View>
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"></View>
-
-                <Button
-                    android:layout_width="100dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:padding="5dp"
-                    android:text="Next" />
+                    android:paddingBottom="15dp"
+                    android:text="print(&quot;This line will be print&quot;)"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
 
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="This line will be print."
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCommentPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonComment" />
+
+        <Button
+            android:id="@+id/btnCommentNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonComment" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

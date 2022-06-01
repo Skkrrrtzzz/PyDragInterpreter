@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:scrollbars="none"
+    tools:context=".PythonLists">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/LLPythonLists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvPythonLists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:text="Python Lists"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Python lists are one of the 4 built-in data types, these are the Sets, Lists, Tuples and Dictionary. These data types are used to store collections data."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="Python lists are changeable, have ordered elements, and allow you to store duplicate elements."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="Creating a List"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="List is created by placing elements inside square brackets &#91; &#93;, elements are separated by comma."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Syntax"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="variable = &#91;element, element, element&#93;"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot; &#93;\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91; \'Python\', \'Java\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingTop="100dp"
+                android:paddingBottom="15dp"
+                android:text="A list can contain different data types."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="myList = &#91;&quot;Python&quot;, 1991, 3.10, True&#93;\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', 1991, 3.10, True&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="In this list contains Strings, Integers, Float and Boolean."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Nested List"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="A list can also have a another list inside the list, This is called a Nested List"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="myList = &#91;&#91;&quot;Python&quot;, &quot;Java&quot;&#93;, 1, 2, 3&#93;\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;&#91;\'Python\', \'Java\'&#93;, 1, 2, 3&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mylist"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Accessing Element"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="Accessing elements of a list is done by using index operator [ ] and referring the index number. In Python, Index starts at 0 meaning the first element has index of 0. "
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="Remember that the index number must use int to access the element. float, complex and other types are not allowed."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nprint(myList[1])"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="Java"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Negative indexing"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="Negative Indexing means start from the end"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="-1 refers to the last element, -2 refers to the second last element, and so on."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nprint(myList[-1])"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="PHP"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Slicing Index"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="Using the colon (:), we can access the range of an element in a list."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot;, &quot;Kotlin&quot;\n"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#beginning to end"
+                    android:textColor="@color/ColorComment"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="print(mylist&#91; : &#93;)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Index 0 to index 2"
+                    android:textColor="@color/ColorComment"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="print(mylist&#91;0 : 2&#93;)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Index 1 to end"
+                    android:textColor="@color/ColorComment"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="print(mylist&#91;1 : &#93;)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91; \'Python\', \'Java\', \'PHP\', \'Kotlin\' &#93;\n&#91; \'Python\', \'Java\', \'PHP\' &#93;\n&#91; \'Java\', \'PHP\', \'Kotlin\' &#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+
+
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Changing Element"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="List is changeable. To change the value of a element, you can use its index number"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot; &#93;, &quot;PHP&quot; &#93;\nmyList[1] = DART\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'DART\', \'PHP\' &#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Adding Element"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="To add element on a list, you can use append() method add to the end of the list."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.append(&quot;C++&quot;)\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'Java\', \'PHP\', \'C++\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Insert()"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="The insert() method insert element at the specific index."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.insert(1, &quot;C++&quot;)\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'C++\', \'Java\', \'PHP\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="extend()"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="The extend() method insert several element to the list."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.extend(&#91;&quot;C++&quot;, &quot;JavaScript&quot;, &quot;Swift&quot;&#93;)\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'C++\', \'Java\', \'PHP\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="Removing Element"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="The remove() method removes the specific element to the list."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.remove(&quot;Java&quot;)\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'PHP\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="pop()"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="The pop() method removes element the specific index."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.pop(1)\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'PHP\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="NOTE:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="If you do not specify the index inside the pop() method, it removes the last element of the list "
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingTop="100dp"
+                android:paddingBottom="15dp"
+                android:text="The del keyword also removes element the specific index."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\ndel myList[1]\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91;\'Python\', \'PHP\'&#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="WARNING:"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:justificationMode="inter_word"
+                    android:text="Be careful using del keyword, make sure add specific index if not it will delete entire list"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="#EBECF6" />
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="100dp"
+                android:paddingBottom="20dp"
+                android:text="clear()"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="30dp"
+                android:text="The clear() method will empthy the entire list. The list still exist but no element inside in it."
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mylist = &#91;&quot;Python&quot;, &quot;Java&quot;, &quot;PHP&quot; &#93;\nmyList.clear()\nprint(myList)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/examplecon"
+                android:gravity="center_horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:text="&#91; &#93;"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnListPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonLists" />
+
+        <Button
+            android:id="@+id/btnListNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonLists" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#363636"
     android:orientation="vertical"
-    android:padding="20dp">
-
+    android:padding="20dp"
+    android:scrollbars="none"
+    tools:context=".PythonSyntax">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/LLPythonSyntax"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:paddingBottom="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -25,11 +28,12 @@
                 android:id="@+id/tvPythonSyntax"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="start"
+                android:layout_gravity="center"
                 android:paddingBottom="20dp"
                 android:text="Python Syntax"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -38,7 +42,8 @@
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
                 android:text="Python is a very simple language, and has a very straightforward syntax. "
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -46,82 +51,140 @@
                 android:layout_gravity="start"
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
-                android:text="It's easy to print out the line"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="15dp"
-                android:text="Example:"
+                android:text="It's easy to print out the line. Simply use keyword print follow by parethesis and single or doubles quotes. within these quotations the string messages will be placed. "
                 android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/greencontainer"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="15dp"
-                    android:text="print(&quot;This line will be print.&quot;)"
-                    android:textSize="15sp" />
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingBottom="15dp"
-                android:text="Output:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#d3d3d3"
-                android:padding="10dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="15dp"
-                    android:text="This line will be print."
-                    android:textSize="15sp" />
-
-
-
-            </LinearLayout>
-
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </LinearLayout>
-
-
-        <!--        LINEAR LAYOUT PYTHON INDENTATION-->
-        <LinearLayout
-            android:id="@+id/LLPythonSyntaxx"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LLPythonSyntax">
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Syntax to print() string"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp"
+                android:text="print(&quot;String here&quot;)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Syntax to print() value of variables"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp"
+                android:text="print(varName)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="var = 5\n\nprint(&quot;This line will be print.&quot;)\nprint(var)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="This line will be print.\n5"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#EBECF6"/>
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
                 android:paddingBottom="20dp"
                 android:text="Python Indentation"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="In other programming languages, blocks of code are denoted by curly braces."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,75 +193,190 @@
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
                 android:text="Python uses indentation for blocks, instead of curly braces."
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:justificationMode="inter_word"
                 android:paddingBottom="15dp"
-                android:text="Both tabs and spaces are supported. most of the programmers use four spaces but one space is possible"
-                android:textSize="15sp" />
+                android:text="In Python, both tabs and spaces are supported. Some programmers use tabs for indentation to look better and read better, but atleast one space is possible."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
 
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/greencontainer"
-                android:orientation="vertical"
+                android:background="#232865"
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/send_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="x = 5 \ny = &quot;Hello, World!&quot;\nprint(x)\nprint(y)"
-                android:textSize="15sp" />
+                    android:text="x = 0\ny = &quot;5&quot;\nif x = 0 :\n  print(&quot;Hello&quot;)\nif y = 5 :\n      print(&quot;World!&quot;)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
 
             </LinearLayout>
 
+            <!--            * * * * * OUTPUT * * * * *-->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 android:paddingTop="20dp"
                 android:paddingBottom="15dp"
                 android:text="Output:"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#d3d3d3"
-                android:orientation="vertical"
-                android:padding="10dp">
+                android:background="#232865"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="5"
-                    android:textSize="15sp" />
+                    android:text="Hello\nWorld!"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+            <View
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#C3C3C3"/>
+            <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:paddingTop="50dp"
+                android:paddingBottom="20dp"
+                android:text="What happens if you don't use indentation?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:justificationMode="inter_word"
+                android:paddingBottom="15dp"
+                android:text="As we know, Python denotes a block of code using indentation. If you skip indentation, Python will give you an error."
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+
+
+            <!--            * * * * * EXAMPLE * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Example:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:text="x = 0\nif x = 0 :\nprint(x)"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+            <!--            * * * * * OUTPUT * * * * *-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:text="Output:"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:background="@drawable/examplecon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#232865"
+                android:padding="10dp" >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="15dp"
-                    android:text="Hello, World!"
-                    android:textSize="15sp" />
+                    android:text="IndentationError: unexpected indent"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
             </LinearLayout>
 
         </LinearLayout>
+
         <Button
-            android:id="@+id/send_button"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginStart="250dp"
-            android:text="Try it"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/btnSyntaxPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Previous"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/LLPythonSyntaxx" />
+            app:layout_constraintTop_toBottomOf="@id/LLPythonSyntax" />
+
+        <Button
+            android:id="@+id/btnSyntaxNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:background="@drawable/custom_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LLPythonSyntax" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </ScrollView>

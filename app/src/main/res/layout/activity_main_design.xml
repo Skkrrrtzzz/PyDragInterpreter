@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainDesign">
+    <!--    android:padding="5dp"-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/headertopic_con">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="#1c2152"
+                    android:src="@drawable/ic_arrowback" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Learn Python"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"/>
+
+                    <!-- * * * * * HORIZONTAL LINE * * * * *-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#EBECF6" />
+                    <!-- * * * * * HORIZONTAL LINE * * * * *-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/idPyIntroAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:drawableRight="@drawable/ic_check_circle"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="About Python"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyIntroSyntaxIndent"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Syntax &amp; Indentation"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyIntroComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Comments"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyIntroVariables"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Variables"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyIntroDataTypes"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Data Types"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+<!--            QUIZ ONE-->
+            <TextView
+                android:id="@+id/idTakePyIntroQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/topic_con"
+                android:drawableRight="@drawable/ic_lock"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Python Quiz I"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+
+
+
+                <TextView
+                    android:id="@+id/idPyNumbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Numbers"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyStrings"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Strings"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idPyIfElse"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topic_con"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="If Else"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/idPyForLoops"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topic_con"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="For Loops"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/idPyWhileLoops"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topic_con"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="While Loop"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <!--            QUIZ TWO-->
+            <TextView
+                android:id="@+id/idTakePyIntroQuizTwo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/topic_con"
+                android:drawableRight="@drawable/ic_lock"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Python Quiz II"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/idPyLists"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Lists"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/idPyTuples"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Tuples"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/idPySets"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Sets"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/idPyDictionaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/topic_con"
+                    android:enabled="false"
+                    android:gravity="center_vertical"
+                    android:padding="20dp"
+                    android:text="Dictionaries"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idPyFunctions"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topic_con"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Functions"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idPyArrays"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/topic_con"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Arrays"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <!--            QUIZ THREE-->
+            <TextView
+                android:id="@+id/idTakePyIntroQuizThree"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/topic_con"
+                android:drawableRight="@drawable/ic_lock"
+                android:enabled="false"
+                android:gravity="center_vertical"
+                android:padding="20dp"
+                android:text="Python Quiz III"
+                android:textColor="@color/gray"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/idCurrent"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

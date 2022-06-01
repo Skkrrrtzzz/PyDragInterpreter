@@ -3,37 +3,37 @@ package com.python.pydraginterpreter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.TextView;
 
-import com.python.pydraginterpreter.databinding.ActivityPythonSyntaxBinding;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class PythonSyntax extends DrawerBase {
-    //  Initialize variable
-    Button btnTryit;
-    TextView sendCode;
-    ActivityPythonSyntaxBinding activityPythonSyntaxBinding;
+public class PythonSyntax extends AppCompatActivity {
+
+    Button buttonSyntaxPrev;
+    Button buttonSyntaxNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        activityPythonSyntaxBinding = ActivityPythonSyntaxBinding.inflate(getLayoutInflater());
-        setContentView(activityPythonSyntaxBinding.getRoot());
-        allocateActivityTitle("Python Syntax");
+        setContentView(R.layout.activity_python_syntax);
 
-        //finding ID from textview(sample code)
-        sendCode = findViewById(R.id.send_code);
-        btnTryit = findViewById(R.id.send_button);
+        buttonSyntaxPrev = findViewById(R.id.btnSyntaxPrev);
+        buttonSyntaxNext = findViewById(R.id.btnSyntaxNext);
 
-        //Add onclick listener if button is click
-        btnTryit.setOnClickListener(view -> {
-            //Getting text and converting into string
-            String getCode = sendCode.getText().toString();
+        buttonSyntaxNext.setOnClickListener(view -> {
 
             //Creating intent to navigate to the next activity
-            Intent intent = new Intent(PythonSyntax.this, MainDrag.class);
-            intent.putExtra("samplekey", getCode);
+            //Next
+            Intent intent = new Intent(PythonSyntax.this, ExerSyntax.class);
+            overridePendingTransition(0, 0);
             startActivity(intent);
         });
 
+        buttonSyntaxPrev.setOnClickListener(view -> {
+            //Creating intent to navigate to the next activity
+            //Previous
+            Intent intent = new Intent(PythonSyntax.this, MainDesign.class);
+            overridePendingTransition(0, 0);
+            startActivity(intent);
+        });
     }
 }

@@ -1,20 +1,30 @@
 package com.python.pydraginterpreter;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
-import com.python.pydraginterpreter.databinding.ActivityPythonIntroBinding;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class PythonIntro extends DrawerBase {
+public class PythonIntro extends AppCompatActivity {
 
 
 
-    ActivityPythonIntroBinding activityPythonIntroBinding;
+    Button buttonNext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        activityPythonIntroBinding = ActivityPythonIntroBinding.inflate(getLayoutInflater());
-        setContentView(activityPythonIntroBinding.getRoot());
-        allocateActivityTitle("Python Introduction");
+        setContentView(R.layout.activity_python_intro);
+
+        buttonNext = findViewById(R.id.btnIntroNext);
+
+        buttonNext.setOnClickListener(view -> {
+
+            //Creating intent to navigate to the next activity
+            Intent intent = new Intent(PythonIntro.this, PythonSyntax.class);
+            overridePendingTransition(0, 0);
+            startActivity(intent);
+        });
     }
 }

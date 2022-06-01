@@ -1,41 +1,153 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.python.pydraginterpreter">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/img1"
+        android:icon="@drawable/pydrag"
+        android:installLocation="preferExternal"
         android:label="@string/PyDrag"
-        android:roundIcon="@drawable/img1"
+        android:roundIcon="@drawable/pydrag"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".PythonSyntax"
+            android:name=".AboutPython"
+            android:exported="false" />
+        <activity
+            android:name=".MainOutput"
+            android:exported="false"
+            android:parentActivityName=".MainDrag" />
+        <activity
+            android:name=".PythonQuizTwo"
+            android:exported="false" />
+        <activity
+            android:name=".ExerIfElse"
+            android:exported="false" />
+        <activity
+            android:name=".PythonIfElse"
+            android:exported="false" />
+        <activity
+            android:name=".PythonQuizOne"
+            android:exported="false" />
+        <activity
+            android:name=".ExerWhileLoop"
+            android:exported="false" />
+        <activity
+            android:name=".PythonWhileLoop"
+            android:exported="false" />
+        <activity
+            android:name=".ExerForLoop"
+            android:exported="false" />
+        <activity
+            android:name=".PythonForLoop"
+            android:exported="false" />
+        <activity
+            android:name=".ExerArrays"
+            android:exported="false" />
+        <activity
+            android:name=".PythonArrays"
+            android:exported="false" />
+        <activity
+            android:name=".ExerFunctions"
+            android:exported="false" />
+        <activity
+            android:name=".PythonFunctions"
+            android:exported="false" />
+        <activity
+            android:name=".ExerDictionary"
+            android:exported="false" />
+        <activity
+            android:name=".PythonDictionary"
+            android:exported="false" />
+        <activity
+            android:name=".ExerTuples"
+            android:exported="false" />
+        <activity
+            android:name=".PythonTuples"
+            android:exported="false" />
+        <activity
+            android:name=".ExerSets"
+            android:exported="false" />
+        <activity
+            android:name=".PythonSets"
+            android:exported="false" />
+        <activity
+            android:name=".ExerLists"
+            android:exported="false" />
+        <activity
+            android:name=".PythonLists"
+            android:exported="false" />
+        <activity
+            android:name=".ExerBooleans"
+            android:exported="false" />
+        <activity
+            android:name=".PythonBooleans"
+            android:exported="false" />
+        <activity
+            android:name=".ExerStrings"
+            android:exported="false" />
+        <activity
+            android:name=".PythonStrings"
+            android:exported="false" />
+        <activity
+            android:name=".ExerNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".PythonNumbers"
+            android:exported="false" />
+        <activity
+            android:name=".ExerComment"
+            android:exported="false" />
+        <activity
+            android:name=".ExerDataTypes"
+            android:exported="false" />
+        <activity
+            android:name=".ExerVariables"
+            android:exported="false" />
+        <activity
+            android:name=".PythonDataTypes"
+            android:exported="false" />
+        <activity
+            android:name=".PythonVariables"
+            android:exported="false" />
+        <activity
+            android:name=".ExerSyntax"
             android:exported="false" />
         <activity
             android:name=".PythonComment"
             android:exported="false" />
         <activity
+            android:name=".QuizSyntax"
+            android:exported="false" />
+        <activity
+            android:name=".PythonSyntax"
+            android:exported="false" />
+        <activity
             android:name=".PythonIntro"
             android:exported="false" />
         <activity
-            android:name=".DrawerBase"
-            android:exported="false" />
-        <activity
-            android:name=".SampleLearn"
+            android:name=".PReferences"
             android:exported="false" />
         <activity
             android:name=".MainDrag"
             android:exported="false" />
         <activity
-            android:name=".MainLearn"
-            android:exported="true"/>
+            android:name=".LvlOne"
+            android:exported="false" />
+        <activity
+            android:name=".MainDesign"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreen"
             android:exported="true">
-            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
